@@ -1,0 +1,22 @@
+javascript:
+function makeid(length) {
+  var text = "";
+  var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+  for (var i = 0; i < length; i++)
+    text += possible.charAt(Math.floor(Math.random() * possible.length));
+  return text;
+}
+var rG = Math.floor(Math.random() * 2);
+var gender = ""
+var usr = makeid(10);
+var mail = makeid(10) + "@gmail.com";
+var psw = makeid(9);
+if (rG == 0) gender = "female"
+	else gender = "male";
+document.getElementById("username").value = usr;
+document.getElementById("email").value = mail;
+document.getElementById("password").value = psw;
+document.getElementById("confirm_password").value = psw;
+document.getElementById("gender").value = genders;
+document.getElementById("accept_terms").click();
+document.getElementById("sign_submit").click();
