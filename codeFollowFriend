@@ -1,0 +1,5 @@
+javascript:
+var follow = document.getElementsByClassName("btn btn-default btn-sm wo_follow_btn");
+for(var i = 0; i<follow.length; i+=1) {	
+	follow[i].click();
+}
