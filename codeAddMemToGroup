@@ -1,0 +1,5 @@
+javascript:
+var addMem = document.getElementsByClassName("btn btn-default btn-sm");
+for(var i = 0; i<addMem.length; i+=1) {	
+	addMem[i].click();
+}
