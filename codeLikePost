@@ -1,0 +1,6 @@
+javascript:
+var like = document.getElementsByClassName("like-btn like-btn-post unselectable");
+for(var i = 0; i<like.length; i+=1) {	
+	like[i].click();
+}
+alert('Đã like thành công ' + likepost.length + ' bài viết.');
