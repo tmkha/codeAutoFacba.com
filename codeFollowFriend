@@ -1,5 +1,12 @@
-javascript:
-var follow = document.getElementsByClassName("btn btn-default btn-sm wo_follow_btn");
-for(var i = 0; i<follow.length; i+=1) {	
-	follow[i].click();
+var user = document.getElementsByClassName('col-md-3 col-sm-4 nearby_user_wrapper_prnt');
+for (var i = 0; i < user.length; i++){
+	var getClass = user[i].getElementsByClassName('user-follow-button')[0];
+	var regEx = /class="(.*?)" id/g.exec(getClass.innerHTML);
+	var className = regEx[1];
+	var n = className.localeCompare('btn btn-default btn-sm wo_follow_btn');
+	if (n == 0){
+		user[i].getElementsByClassName('btn btn-default btn-sm wo_follow_btn')[0].click();
+	} else {
+		continue;
+    }
 }
