@@ -1,6 +1,11 @@
-javascript:
-var like = document.getElementsByClassName("like-btn like-btn-post unselectable");
-for(var i = 0; i<like.length; i+=1) {	
-	like[i].click();
+var post = document.getElementsByClassName('post-container');
+for (var i = 0; i < post.length; i++){
+	var data_like = post[i].getElementsByClassName('wo-reaction wo-reaction-post stat-item unselectable')[0];
+	var regEx = /data_react="(.*?)"/g.exec(data_like.innerHTML);
+	var data_react = regEx[1];
+	if (data_react == 0) {
+	post[i].getElementsByClassName('like-btn like-btn-post unselectable')[0].click();
+	} else {
+		continue;
+    }
 }
-alert('Đã like thành công ' + likepost.length + ' bài viết.');
