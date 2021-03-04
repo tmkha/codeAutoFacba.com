@@ -10,3 +10,10 @@ for (var i = 0; i < user.length; i++){
 		continue;
     }
 }
+
+
+/*
+for (var i = 0; i < 1200; i++) {
+    document.getElementsByClassName("btn btn-default text-center pointer load-more-users")[0].click();
+}
+*/
