@@ -9,3 +9,8 @@ for (var i = 0; i < post.length; i++){
 		continue;
     }
 }
+
+/*
+var load = document.getElementsByClassName("load-more pointer")[0];
+load.getElementsByClassName("btn btn-default")[0].click();
+*/
